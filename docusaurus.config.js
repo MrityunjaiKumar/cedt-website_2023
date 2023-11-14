@@ -8,7 +8,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula")
 const config = {
   title: "CEDT",
   tagline: "CEDT is a tool for creating and managing CEDT projects.",
-  favicon: "img/favicon.ico",
+  favicon: "img/logo-cedt.png",
 
   // Set the production url of your site here
   url: "https://your-docusaurus-test-site.com",
@@ -64,19 +64,24 @@ const config = {
       // Replace with your project's social card
       image: "img/docusaurus-social-card.jpg",
       navbar: {
-        title: "My Site",
+        title: "CEDT",
         logo: {
-          alt: "My Site Logo",
-          src: "img/logo.svg",
+          alt: "CEDT Logo",
+          src: "img/logo-cedt.png",
         },
         items: [
+          { to: "/blog", label: "Blog", position: "left" },
+          {
+            to: "/about",
+            label: "About",
+            position: "left",
+          },
           {
             type: "docSidebar",
-            sidebarId: "tutorialSidebar",
+            sidebarId: "tutorialSidebar2",
             position: "left",
             label: "Tutorial",
           },
-          { to: "/blog", label: "Blog", position: "left" },
           {
             href: "https://github.com/facebook/docusaurus",
             label: "GitHub",
